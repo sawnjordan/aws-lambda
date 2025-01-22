@@ -1,0 +1,19 @@
+# Exclude Python cache files
+__pycache__/
+*.py[cod]
+
+# Exclude virtual environments
+venv/
+.env/
+
+# Exclude editor and system files
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Exclude build artifacts and unnecessary files
+*.sqlite3
+*.db
+*.pkl
+*.pid
