@@ -107,7 +107,7 @@ resource "null_resource" "push_image_to_ecr" {
   provisioner "local-exec" {
     command = <<EOT
       export GIT_COMMIT=$(git rev-parse --short HEAD)
-      $(aws ecr get-login --no-include-email --region ${var.aws_region})
+      aws ecr get-login-password --region ${var.aws_region} | docker login --username AWS --password-stdin ${var.ecr_repository_url}
       docker build -t ${var.ecr_repository_url}:$GIT_COMMIT ../
       docker push ${var.ecr_repository_url}:$GIT_COMMIT
     EOT
