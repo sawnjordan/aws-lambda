@@ -21,7 +21,7 @@ variable "ecr_repository_url" {
 variable "lambda_function_name" {
   description = "The name for Lambda function"
   type        = string
-  default     = "lambda-demo-function"
+  default     = "LambdaDemoFunction"
 }
 
 variable "aws_region" {

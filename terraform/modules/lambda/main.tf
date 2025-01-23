@@ -53,9 +53,9 @@ resource "aws_iam_role_policy_attachment" "lambda_execution_policy_attachment" {
 resource "aws_lambda_permission" "apigw_lambda_permission" {
   statement_id  = "AllowExecutionFromAPIGateway"
   action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.my_lambda.arn
+  function_name = aws_lambda_function.my_lambda.function_name
   principal     = "apigateway.amazonaws.com"
-  source_arn    = "${var.api_gateway_execution_arn}/*/*/*"
+  source_arn    = "${var.api_gateway_execution_arn}/*"
 }
 
 resource "aws_security_group" "lambda_security_group" {
