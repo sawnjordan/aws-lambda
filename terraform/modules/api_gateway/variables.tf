@@ -1,11 +1,13 @@
 variable "api_name" {
   type        = string
   description = "The name of the API Gateway"
+  default     = "DemoAPIKey"
 }
 
 variable "api_description" {
   type        = string
   description = "The description of the API Gateway"
+  default     = "API key for accessing the Python application"
 }
 
 variable "stage_name" {

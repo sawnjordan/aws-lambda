@@ -109,7 +109,7 @@ Ensure the following are installed and configured on your local system:
    aws apigateway get-api-keys --query 'items[].[id, name]' --output table
    ```
 
-   **Note:** The ID of the desired API key.
+   **Note:** The ID of the desired API key which will be `DemoAPIKey`.
 
 2. **Retrieve the API Key Value**:
    ```bash

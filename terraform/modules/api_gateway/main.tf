@@ -127,8 +127,8 @@ resource "aws_api_gateway_stage" "lambda_demo_api_stage" {
 
 # Create an API Gateway API Key
 resource "aws_api_gateway_api_key" "api_key" {
-  name        = "DemoAPIKey"
-  description = "API key for accessing the Python application"
+  name        = var.api_name
+  description = var.api_description
   enabled     = true
 }
 
