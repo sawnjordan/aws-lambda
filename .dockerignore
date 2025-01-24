@@ -17,3 +17,10 @@ venv/
 *.db
 *.pkl
 *.pid
+
+# Exclude version control directories
+.git/
+.gitignore
+
+# Exclude Terraform folder
+terraform/
