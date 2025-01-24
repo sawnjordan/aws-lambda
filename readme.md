@@ -11,7 +11,47 @@ Ensure the following are installed and configured on your local system:
 
 ## Building and Testing the Docker Image Locally
 
-Before deploying your Docker image to AWS ECR, you can test it locally to ensure that it works as expected.
+### Using Makefile
+
+**Available Commands**
+
+- Build the Docker image:
+
+```bash
+   make build
+```
+
+- Run the Docker container locally:
+
+```bash
+   make run
+```
+
+- Test the Lambda function locally:
+
+```bash
+   make test
+```
+
+- Stop the running Docker container:
+
+```bash
+   make stop
+```
+
+- Remove the stopped Docker container:
+
+```bash
+   make remove
+```
+
+- Stop and remove the Docker container:
+
+```bash
+   make clean
+```
+
+**Note: You can also use below steps without make command as well**
 
 ### **Steps**
 
