@@ -177,8 +177,6 @@ Replace `<API_KEY_VALUE>` with the retrieved API key.
    - **Value**: `<API_KEY_VALUE>`
 4. Send the request and verify the response.
 
-### **Securing the API Key**
-
 ---
 
 By following these instructions, you can successfully build, deploy, and test the Python application in AWS using Docker, Terraform, and API Gateway.
